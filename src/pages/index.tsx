@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="center">
-        <h1 className={`${inter.className} font-black text-5xl`}>
+        <h1 id="heading" className={`${inter.className} font-black text-5xl`}>
           This Is The Index Route
         </h1>
       </main>
