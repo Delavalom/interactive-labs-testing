@@ -19,13 +19,13 @@ describe("Test api generate", () => {
   test("using a POST method", async () => {
     const { req, res } = createMocks({
       method: "POST",
-      body: { name: "Luis" },
+      body: { name: "Joe" },
     });
 
     await handler(req, res);
 
     expect(JSON.parse(res._getData())).toEqual({
-      greetings: "Hello Luis",
+      greetings: "Hello Joe",
       message: "OK",
     });
   });
