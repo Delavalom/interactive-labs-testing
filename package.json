@@ -7,9 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "vitest"
+    "test": "vitest",
+    "typecheck": "vitest typecheck"
   },
   "dependencies": {
+    "@tanstack/react-query": "^4.26.1",
+    "@trpc/client": "^10.14.1",
+    "@trpc/next": "^10.14.1",
+    "@trpc/react-query": "^10.14.1",
     "@trpc/server": "^10.14.1",
     "axios": "^1.3.4",
     "cross-fetch": "^3.1.5",

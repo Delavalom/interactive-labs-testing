@@ -1,0 +1,21 @@
+import { initTRPC, inferAsyncReturnType } from "@trpc/server";
+import { database } from "./db";
+import { z } from "zod";
+
+
+// With this context you can access the in memory database
+export const createContext = async () => {
+  return {
+    database,
+  };
+};
+
+// create the context type
+type Context = inferAsyncReturnType<typeof createContext>;
+
+// initialize trpc
+const t = initTRPC.context<Context>().create();
+
+// TODO: create tRPC router and procedures 
+
+export type AppRouter = typeof appRouter;
