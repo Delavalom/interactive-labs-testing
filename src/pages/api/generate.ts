@@ -6,3 +6,4 @@ type Data = {
 };
 
 
+// Create a handler function that recieve GET and POST requests
