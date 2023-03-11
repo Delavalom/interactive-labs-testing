@@ -3,7 +3,7 @@ import { type FC } from "react";
 
 
 const Notes = () => {
-    // const users = api.getUsers.useQuery()
+  // TODO: call the api to get the users data
   const users = {data: null}
 
   if (!users.data) {
