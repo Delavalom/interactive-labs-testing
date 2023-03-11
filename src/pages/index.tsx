@@ -1,12 +1,9 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import { api } from "@/utils/trpc";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const users = api.getUsers.useQuery()
-
   return (
     <>
       <Head>
@@ -19,9 +16,6 @@ export default function Home() {
         <h1 id="heading" className={`${inter.className} font-black text-5xl`}>
           This Is The Index Route
         </h1>
-        {users.data ? users?.data.map(user => (
-          <p key={user.id}>{user.body.text}</p>
-        )) : "Loading..."}
       </main>
     </>
   );
