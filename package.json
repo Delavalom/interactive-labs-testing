@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "vitest --config ./vitest.config.ts",
+    "test": "vitest",
     "typecheck": "vitest typecheck"
   },
   "dependencies": {
@@ -23,7 +23,6 @@
     "node-mocks-http": "^1.12.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "whatwg-fetch": "^3.6.2",
     "zod": "^3.21.4"
   },
   "devDependencies": {
@@ -42,7 +41,6 @@
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7",
     "typescript": "4.9.5",
-    "vitest": "^0.29.1",
-    "vitest-mock-extended": "^1.1.0"
+    "vitest": "^0.29.1"
   }
 }
