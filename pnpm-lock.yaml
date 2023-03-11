@@ -29,6 +29,8 @@ specifiers:
   tailwindcss: ^3.2.7
   typescript: 4.9.5
   vitest: ^0.29.1
+  vitest-mock-extended: ^1.1.0
+  whatwg-fetch: ^3.6.2
   zod: ^3.21.4
 
 dependencies:
@@ -44,6 +46,7 @@ dependencies:
   node-mocks-http: 1.12.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  whatwg-fetch: 3.6.2
   zod: 3.21.4
 
 devDependencies:
@@ -63,6 +66,7 @@ devDependencies:
   tailwindcss: 3.2.7_postcss@8.4.21
   typescript: 4.9.5
   vitest: 0.29.1_kh3kqsnt5xuw2neofhssq7gpky
+  vitest-mock-extended: 1.1.0_cx3ov7vinozmfq6jam55ywvbdu
 
 packages:
 
@@ -4149,6 +4153,14 @@ packages:
       punycode: 2.3.0
     dev: true
 
+  /ts-essentials/9.3.1_typescript@4.9.5:
+    resolution: {integrity: sha512-9CChSvQMyVRo29Vb1A2jbs+LKo3d/bAf+ndSaX0T8cEiy/HChVaRN/HY5DqUryZ8hZ6uol9bEgCnGmnDbwBR9Q==}
+    peerDependencies:
+      typescript: '>=4.1.0'
+    dependencies:
+      typescript: 4.9.5
+    dev: true
+
   /tsconfig-paths/3.14.2:
     resolution: {integrity: sha512-o/9iXgCYc5L/JxCHPe3Hvh8Q/2xm5Z+p18PESBU6Ff33695QnCHBEjcytY2q19ua7Mbl/DavtBOLq+oG0RCL+g==}
     dependencies:
@@ -4348,6 +4360,17 @@ packages:
       fsevents: 2.3.2
     dev: true
 
+  /vitest-mock-extended/1.1.0_cx3ov7vinozmfq6jam55ywvbdu:
+    resolution: {integrity: sha512-4AMVDXmbBd7kImh1Hi2B0EBuDy6hTy+8r4CVEcpEsmlVmxjHB2vszr/6B1W6ONYw76RLhlLDJlmk9fOE5B9H8w==}
+    peerDependencies:
+      typescript: 3.x || 4.x
+      vitest: '>=0.29.2'
+    dependencies:
+      ts-essentials: 9.3.1_typescript@4.9.5
+      typescript: 4.9.5
+      vitest: 0.29.1_kh3kqsnt5xuw2neofhssq7gpky
+    dev: true
+
   /vitest/0.29.1_kh3kqsnt5xuw2neofhssq7gpky:
     resolution: {integrity: sha512-iSy6d9VwsIn7pz5I8SjVwdTLDRGKNZCRJVzROwjt0O0cffoymKwazIZ2epyMpRGpeL5tsXAl1cjXiT7agTyVug==}
     engines: {node: '>=v14.16.0'}
@@ -4441,6 +4464,10 @@ packages:
     dependencies:
       iconv-lite: 0.6.3
     dev: true
+
+  /whatwg-fetch/3.6.2:
+    resolution: {integrity: sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==}
+    dev: false
 
   /whatwg-mimetype/3.0.0:
     resolution: {integrity: sha512-nt+N2dzIutVRxARx1nghPKGv1xHikU7HKdfafKkLNLindmPU/ch3U31NOCGGA/dmPcmb1VlofO0vnKAcsm0o/Q==}
