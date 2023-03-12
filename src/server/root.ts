@@ -1,6 +1,8 @@
 import { initTRPC, inferAsyncReturnType } from "@trpc/server";
 import { database } from "./db";
 import { z } from "zod";
+import path from "path";
+import { readFileSync } from "fs";
 
 // With this context you can access the in memory database
 export const createContext = async () => {
@@ -36,3 +38,4 @@ export const appRouter = router({
 });
 
 export type AppRouter = typeof appRouter;
+
