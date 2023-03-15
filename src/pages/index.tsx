@@ -5,7 +5,6 @@ import Notes from "@/components/Notes";
 import { signIn, useSession } from "next-auth/react";
 
 export default function Home() {
-  const {data: session, status} = useSession()
   return (
     <>
       <Head>
@@ -20,7 +19,6 @@ export default function Home() {
         </h1>
         <Notes />
         <button onClick={() => signIn("github")}>Sign In</button>
-        {session && <h3 className="text-2xl">{session.user?.name}</h3>}
       </main>
     </>
   );
