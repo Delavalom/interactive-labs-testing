@@ -1,3 +1,3 @@
 tabs: ['./src/pages/[note].tsx']
-terminal: ["yarn && yarn dev"]
+terminal: []
 playground-view: "terminal-editor-browser"
