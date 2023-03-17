@@ -36,7 +36,7 @@ export const testRouter = router({
       })
     )
     .query(({ ctx, input }) => {
-      const user = ctx.database.filter((record) => record.id === input.id);
+      const user = ctx.database.find((record) => record.id === input.id);
       return user;
     }),
 });
