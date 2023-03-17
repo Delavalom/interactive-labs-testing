@@ -1,2 +1,3 @@
-tabs: ['README.md']
-terminal: []
+tabs: ['src/pages/api/generate.ts']
+terminal: ["yarn && yarn dev"]
+playground-view: "terminal-editor-browser"
