@@ -9,25 +9,22 @@ export const createContext = async () => {
   };
 };
 
-// create the context type
+// the context type
 type Context = inferAsyncReturnType<typeof createContext>;
 
-// initialize trpc
-const t = initTRPC.context<Context>().create();
+// TODO: initialize trpc
 
 // TODO: create tRPC router and procedures
-const procedure = t.procedure;
-const router = t.router;
 
-export const appRouter = router({
-  getUsers: procedure.query(({ ctx }) => {
-    return ctx.database;
-  }),
-  getUser: procedure
-    .input(z.object({ id: z.number() }))
-    .query(({ ctx, input }) => {
-      return ctx.database.find((record) => record.id === input.id);
-    }),
-});
+// TODO: create an app router
+
+{/*
+  TODO: 
+    create a getUsers procedure, it should return an array of users
+  
+    create a getUser procedure, it should return an user object.
+    validate the input from the user, it should be of type number.
+
+*/}
 
 export type AppRouter = typeof appRouter;
