@@ -4,7 +4,7 @@ import { type FC } from "react";
 type Props = {};
 
 const Note: FC<Props> = () => {
-  // TODO: Extract the query param from useRouter hook
+  // TODO: Extract the query param
 
   return (
     <section className="center">
