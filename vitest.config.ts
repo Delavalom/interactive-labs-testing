@@ -8,6 +8,7 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     mockReset: true,
+    setupFiles: './__labtests/setupTest.tsx'
   },
   resolve: {
     alias: {
