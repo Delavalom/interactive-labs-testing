@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import { api } from "@/utils/trpc";
-import Notes from "@/components/Notes";
+import { api } from "../utils/trpc";
+import Notes from "../components/Notes";
 
 const inter = Inter({ subsets: ["latin"] });
 

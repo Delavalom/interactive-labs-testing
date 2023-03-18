@@ -1,5 +1,5 @@
-import '@/styles/globals.css'
-import { api } from '@/utils/trpc'
+import '../styles/globals.css'
+import { api } from '../utils/trpc'
 import type { AppProps } from 'next/app'
 
 function App({ Component, pageProps }: AppProps) {

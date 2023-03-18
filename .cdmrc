@@ -1,3 +1,3 @@
 tabs: ['src/utils/trpc.ts', 'src/pages/api/[trpc].ts', 'src/components/Notes.tsx']
-terminal: ["yarn && yarn dev"]
+terminals: ["yarn && yarn dev", "echo \"We're ready\""]
 playground-view: "terminal-editor-browser"

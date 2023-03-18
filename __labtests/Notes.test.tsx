@@ -1,6 +1,6 @@
 import { renderHook, waitFor } from "@testing-library/react";
 import { describe, expect, test, vi } from "vitest";
-import { api } from "@/utils/trpc";
+import { api } from "../src/utils/trpc";
 import Notes from "../src/components/Notes";
 import { createWrapper, renderWithClient } from "./setupTest";
 import "whatwg-fetch";
