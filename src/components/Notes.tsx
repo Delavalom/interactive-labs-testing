@@ -3,7 +3,7 @@ import { type FC } from "react";
 
 
 const Notes = () => {
-  // TODO: call the api to get the users data
+  // TODO: query the api to get the users data
   const users = {data: null}
 
   if (!users.data) {
@@ -12,6 +12,7 @@ const Notes = () => {
   
   return (
     <section className="">
+      {/* UNCOMMENT THE LOGIC BELOW */}
       {/* {users.data
         ? users?.data.map((user) => <p key={user.id}>{user.body.text}</p>)
         : "Loading..."} */}
