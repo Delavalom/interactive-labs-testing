@@ -2,7 +2,7 @@ import { api } from "../utils/trpc";
 import { type FC } from "react";
 
 
-const Notes = () => {
+const Notes: FC = () => {
   // TODO: query the api to get the users data
   const users = {data: null}
 
