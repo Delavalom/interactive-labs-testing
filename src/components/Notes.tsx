@@ -4,7 +4,8 @@ import { type FC } from "react";
 
 const Notes: FC = () => {
   // TODO: query the api to get the users data
-  const users = {data: null}
+  const users = api.getUsers.useQuery()
+  console.log(users)
 
   if (!users.data) {
     return <section>Loading... thousand years later...</section>
@@ -13,9 +14,9 @@ const Notes: FC = () => {
   return (
     <section className="">
       {/* UNCOMMENT THE LOGIC BELOW */}
-      {/* {users.data
+      {users.data
         ? users?.data.map((user) => <p key={user.id}>{user.body.text}</p>)
-        : "Loading..."} */}
+        : "Loading..."}
     </section>
   );
 };
