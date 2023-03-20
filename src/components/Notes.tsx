@@ -1,11 +1,10 @@
-import { api } from "../utils/trpc";
+import { api } from "@/utils/trpc";
 import { type FC } from "react";
 
 
 const Notes: FC = () => {
   // TODO: query the api to get the users data
   const users = api.getUsers.useQuery()
-  console.log(users)
 
   if (!users.data) {
     return <section>Loading... thousand years later...</section>
