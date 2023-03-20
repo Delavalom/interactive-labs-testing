@@ -4,7 +4,7 @@ import { type FC } from "react";
 
 const Notes: FC = () => {
   // TODO: query the api to get the users data
-  const users = api.getUsers.useQuery()
+  const users = {data: null}
 
   if (!users.data) {
     return <section>Loading... thousand years later...</section>
@@ -13,9 +13,7 @@ const Notes: FC = () => {
   return (
     <section className="">
       {/* UNCOMMENT THE LOGIC BELOW */}
-      {users.data
-        ? users?.data.map((user) => <p key={user.id}>{user.body.text}</p>)
-        : "Loading..."}
+      {/* TODO: Display an array of p tags with the data from trpc */}
     </section>
   );
 };
