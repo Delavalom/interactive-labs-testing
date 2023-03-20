@@ -1,2 +1,3 @@
-tabs: ['README.md']
-terminal: []
+tabs: ['src/server/root.ts']
+terminals: ["yarn"]
+playground-view: "terminal-editor-browser"
