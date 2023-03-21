@@ -1,2 +1,3 @@
-tabs: ['README.md']
-terminal: []
+tabs: ["prisma/schema.prisma"]
+terminals: ["yarn"]
+playground-view: "terminal-editor-browser"
