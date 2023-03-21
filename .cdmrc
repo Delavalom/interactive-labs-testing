@@ -1,3 +1,3 @@
-tabs: ["prisma/schema.prisma"]
-terminals: ["yarn"]
+tabs: ["src/server/auth.ts", "src/pages/api/auth/[...nextauth].ts"]
+terminals: ["yarn && yarn dev"]
 playground-view: "terminal-editor-browser"

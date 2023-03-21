@@ -1,12 +1,13 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import { api } from "../utils/trpc";
-import Notes from "../components/Notes";
+import { api } from "@/utils/trpc";
+import Notes from "@/components/Notes";
+import { signIn, useSession } from "next-auth/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-
+  const {data: session, status} = useSession()
   return (
     <>
       <Head>
@@ -19,6 +20,8 @@ export default function Home() {
         <h1 id="heading" className={`${inter.className} font-black text-5xl`}>
           This Is The Index Route
         </h1>
+        <Notes />
+        {session && session.user?.name}<button onClick={() => signIn("github")}>Sign In</button>
       </main>
     </>
   );
