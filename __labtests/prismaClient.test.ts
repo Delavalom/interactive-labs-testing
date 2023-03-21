@@ -6,7 +6,7 @@ import { inferProcedureInput } from "@trpc/server";
 vi.mock("../libs/prisma");
 
 describe("Testing Prisma Client", () => {
-  test("createUser should return the generated user", async () => {
+  test("createUser procedure should return the new user", async () => {
     const newUser = {
       name: "Joe",
       email: "example@example.com",
@@ -27,7 +27,7 @@ describe("Testing Prisma Client", () => {
     expect(user).toStrictEqual({ ...newUser, id: 1 });
   });
 
-  test("getUser should return the user", async () => {
+  test("getUser procedure should return the user requested", async () => {
     const newUser = {
       name: "Joe",
       email: "joe@example.com"

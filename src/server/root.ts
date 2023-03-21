@@ -4,9 +4,7 @@ import { z } from "zod";
 
 // TODO: add prisma to the context of your routers
 export const createContext = async () => {
-  return {
-    prisma,
-  };
+  return {};
 };
 
 type Context = inferAsyncReturnType<typeof createContext>;
