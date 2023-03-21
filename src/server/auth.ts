@@ -6,4 +6,4 @@ import { AuthOptions } from "next-auth";
 const clientId = process.env.GITHUB_ID!;
 const clientSecret = process.env.GITHUB_SECRET!;
 
-export const authOptions = {} // satisfies AuthOptions;
+export const authOptions = {} satisfies AuthOptions;

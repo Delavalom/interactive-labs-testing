@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "vitest --config ./vitest.config.ts",
-    "typecheck": "vitest typecheck"
+    "test": "vitest --config ./vitest.config.ts"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.5",
