@@ -16,14 +16,14 @@ type Context = inferAsyncReturnType<typeof createContext>;
 
 // TODO: create tRPC router and procedures
 
-// TODO: create an app router
+// TODO: create a router called appRouter with required procedures
 
 {/*
   TODO: 
-    create a getUsers procedure, it should return an array of users
+    create a getUsers procedure, it should return an array of users from the database
   
-    create a getUser procedure, it should return an user object.
-    validate the input from the user, it should be of type number.
+    create a getUser procedure, it should return an user object from the database.
+    validate the input from the user, it should be an object that holds a property called "id" of type number.
 
 */}
 

@@ -12,7 +12,7 @@ describe("check trpc server app router", () => {
     expect(data).toStrictEqual(database);
   });
 
-  test("procedure getUser", async () => {
+  test("Procedure getUser", async () => {
     const data = await caller.getUser({ id: 1 });
     expect(data).toStrictEqual({
       id: 1,
