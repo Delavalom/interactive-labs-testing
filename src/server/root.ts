@@ -1,29 +1,32 @@
 import { initTRPC, inferAsyncReturnType } from "@trpc/server";
+import { database } from "./db";
 import { z } from "zod";
 
-
-// TODO: add prisma to the context of your routers
+// With this context you can access the in memory database
 export const createContext = async () => {
-  return {};
+  return {
+    database,
+  };
 };
 
+// the context type
 type Context = inferAsyncReturnType<typeof createContext>;
 
-const t = initTRPC.context<Context>().create();
+// TODO: initialize trpc
 
-const procedure = t.procedure;
-const router = t.router;
+// TODO: create tRPC router and procedures
 
-{/* 
-  TODO: create 3 procedures:
-    getUsers procedure, it should return an array of users from prisma
+// TODO: create a router called appRouter with required procedures
 
-    getUser procedure, takes an object with the id (number) property as input, it should return the object of the user.
+{
+  /*
+  TODO: 
+    create a getUsers procedure, it should return an array of users from the database
+  
+    create a getUser procedure, it should return an user object from the database.
+    validate the input from the user, it should be an object that holds a property called "id" of type number.
 
-    createUser procedure, takes an object with the name (string) and email (string) property as input,
-      it should return the object of the new user.
-*/}
-
-export const appRouter = router({});
+*/
+}
 
 export type AppRouter = typeof appRouter;

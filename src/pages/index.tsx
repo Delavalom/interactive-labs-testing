@@ -1,10 +1,6 @@
 import Head from "next/head";
-import { api } from "@/utils/trpc";
-import Notes from "@/components/Notes";
-import { signIn, useSession } from "next-auth/react";
 
 export default function Home() {
-  // TODO: query the session data
 
   return (
     <>
@@ -18,13 +14,6 @@ export default function Home() {
         <h1 id="heading" className="font-black text-5xl">
           This Is The Index Route
         </h1>
-        <Notes />
-        {/* 
-          Validate that the status of the session is "authenticated"
-          and conditionally display a h3 tag with the user's name from the session data
-         */}
-
-        <button onClick={() => signIn("github")}>Sign In</button>
       </main>
     </>
   );
