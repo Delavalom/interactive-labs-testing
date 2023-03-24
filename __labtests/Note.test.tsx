@@ -1,8 +1,7 @@
-import {vi, describe, test, expect} from 'vitest'
+import { vi, describe, test, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import mockRouter from "next-router-mock";
 import Note from "../src/pages/[note]";
-import Link from "next/link";
 
 vi.mock("next/router", () => require("next-router-mock"));
 
