@@ -5,15 +5,7 @@ type Data = {
   greetings?: `Hello ${string}`;
 };
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === "GET") {
-    return res.status(200).json({ message: "OK", greetings: "Hello world" });
-  } else if (req.method === "POST") {
-    const { name } = req.body;
-    return res.status(200).json({ message: "OK", greetings: `Hello ${name}` });
-  }
-  return;
-}
+
 
 {
   /* 
